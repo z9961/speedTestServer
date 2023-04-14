@@ -1,2 +1,0 @@
-# speedTestServer
-java testSpeedServer
