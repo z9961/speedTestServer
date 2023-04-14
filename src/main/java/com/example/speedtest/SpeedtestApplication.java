@@ -21,7 +21,7 @@ public class SpeedtestApplication {
     @RestController
     public static class SpeedTestController {
         @GetMapping("/speed")
-        public void speedTest(@RequestParam Integer fileSize,
+        public void speedTest(@RequestParam(required = false) Integer fileSize,
                               HttpServletResponse response) throws IOException {
             System.gc();
             if (null == fileSize) {
